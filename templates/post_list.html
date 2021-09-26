@@ -3,15 +3,21 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1>Message Board homepage</h1>
+<h1 class="list-header">Message Board homepage</h1>
 <div>
     {% for post in post_list %}
             <div class="card" style="width: 20rem;">
                 <div class="card-body">
-                    <h5 card-title>Message #{{ post.id }}</h5>
-                    <p class="card-txt">{{ post.text }}</p>
-                    <a href="{% url 'post_detail' post.id %}" class="btn btn-primary">Read</a>
-                </div>
+                    <div class="card-title">
+                        <h5>Message #{{ post.id }}</h5>
+                    </div>
+                    <div>
+                        <p class="card-txt">{{ post.text }}</p>
+                    </div>
+                    <div>
+                        <a href="{% url 'post_detail' post.id %}" class="btn">Read</a>
+                    </div>
+                 </div>
             </div>
     {% endfor %}
 </div>

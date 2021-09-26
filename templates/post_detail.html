@@ -2,6 +2,16 @@
 
 {% block title %}Post {{ post.id }}{% endblock title %}
 {% block content %}
-    <h1>Post #{{ post.id }}</h1>
-    <p>{{ post.text }}</p>
+<div class="detail-container">
+    <div class="card-container">
+        <div class="detail-header">
+        <h1 >Post #{{ post.id }}</h1>
+    </div>
+    <div class="detail-par">
+        <p>{{ post.text }}</p> 
+    </div>
+    </div>
+    
+</div>
+    
 {% endblock content %}

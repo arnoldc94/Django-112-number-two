@@ -1,0 +1,27 @@
+
+.list-header {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+.card {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: .5rem;
+}
+
+.card-title {
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color:lightsalmon;
+    
+}
